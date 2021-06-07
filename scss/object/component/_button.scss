@@ -3,6 +3,7 @@
 	height: 36px;
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
 	font-size: 11px;
 	background-color: black;
 	margin-bottom: 0;
@@ -10,12 +11,21 @@
 	// bottom: 0;
 	left: 0;
 	&.about-us {
-		left: 30px;
-		bottom: 50px;
+		left: 40px;
+		bottom: 100px;
 	}
-	&.works, &.culture {
-		bottom: -20px;
+	&.works, &.culture, &.archive, &.contact{
+		left: 15px;
+		bottom: 35px;
 	}
+	// &.archive {
+	// 	bottom: 40px;
+	// 	left: 15px;
+	// }
+	// &.contact {
+	// 	left: 15px;
+	// 	bottom: 0px;
+	// }
 }
 
 .c-button--hamburger {

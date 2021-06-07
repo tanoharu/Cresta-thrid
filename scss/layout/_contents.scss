@@ -2,9 +2,11 @@
 	width: 100%;
 	height: 540px;
 	// height: 600px;
+	position: relative;
 	background-image: url(../../images/about-img.jpg);
 	padding: 50px 15px;
 	background-size: cover;
+	z-index: 200;
 	@include mq(md) {
 		height: 480px;
 		padding: 60px 90px;
@@ -13,7 +15,7 @@
 		width: 1100px;
 		height: 600px;
 		margin: 0 auto;
-		z-index: 200;
+		// z-index: 200;
 	}
 	>div {
 		width: 100%;
@@ -28,77 +30,6 @@
 		}
 	}
 }
-	// height: 550px;
-	// position: relative;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
-	// margin: 120px 170px 0 170px;
-	// @include mq(md) {
-	// 	// width: 100%;
-	// 	// height: 600px;
-	// 	padding: 45px;
-	// 	background-color:lightseagreen;
-	// 	}
-
-	// &.works, &.culture, &.archive, &.contact {
-		// background-color: #f0f0f0;
-		// padding: 30px 15px 30px 15px;
-		// >div {
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	// display: flex;
-		// 	position: relative;
-			// flex-direction: column;
-			// justify-content: center;
-			// >img {
-			// 	width: 100%;
-			// 	height: 60%;
-			// 	// height: 230px;
-			// 	object-fit: cover;
-			// 	// object-position: center;
-			// 	display: block;
-			// 	@include mq(md) {
-			// 		width: 520px;
-			// 		height: 350px;
-			// 	}
-			// }
-			// .text__works, .text__culture{
-			// 	padding: 30px 0;
-			// }
-		// }
-	// }
-// }
-
-	// &.about-us {
-	// 	height: 540px;
-	// 	// height: 600px;
-	// 	background-image: url(../../images/about-img.jpg);
-	// 	padding: 50px 15px;
-	// 	background-size: cover;
-	// 	@include mq(md) {
-	// 		height: 480px;
-	// 		padding: 60px 90px;
-	// 	}
-	// 	@include mq(lg) {
-	// 		width: 1100px;
-	// 		height: 600px;
-	// 		margin: 0 auto;
-	// 		z-index: 200;
-	// 	}
-	// 	>div {
-	// 		width: 100%;
-	// 		height: 100%;
-	// 		padding: 50px 30px;
-	// 		background-color: #fff;
-	// 		@include mq(md) {
-	// 			padding: 40px inherit;
-	// 		}
-	// 		@include mq(lg) {
-	// 			width: 590px;
-	// 		}
-	// 	}
-	// }
 
 .lg-flex-wrap--contents {
 	@include mq(lg) {
@@ -106,17 +37,56 @@
 		height: 700px;
 		// width: 100vw;
 		display: flex;
-		background-color: blue;
+		background-color: #f0f0f0;
 		position: relative;
-
-		justify-content: center;
+		// padding-top: 100px;
+		bottom: 70px;
+		justify-content: space-between;
+		z-index: 100;
 	}
 	
-	.l-contents--works, .l-contents--culture {
+	.l-contents--works {
 		// height: 500px;
 		height: 100%;
 		padding: 40px 15px 50px 15px;
 		position: relative;
+		background-color: #f2f2f2;
+		z-index: 100;
+		@include mq(md) {
+			// padding: 0;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@include mq(lg) {
+			height: 700px;
+			// width: 50%;
+			position: absolute;
+			top: 0;
+			left:0;
+			padding-left: 170px;
+			padding-top: 130px;
+		}
+		>div {
+			width: 100%;
+			>img {
+				width: 100%;
+				max-width: 520px;
+				@include mq(lg) {
+					height: 350px;
+				}
+			}
+			>p {
+				padding: 30px 0 50px 0;
+			}
+		}
+	}
+	.l-contents--culture {
+		height: 100%;
+		padding: 40px 15px 50px 15px;
+		position: relative;
+		background-color: #F2F2F2;
+		// background-color: #f0f0f0;
+
 		@include mq(md) {
 			// padding: 0;
 			padding-left: 30px;
@@ -126,48 +96,41 @@
 			height: 700px;
 			width: 50%;
 			position: absolute;
+			top: 0;
+			right: 0;
+			padding-right: 170px;
+			padding-top: 130px;
+			// left:100px;
 		}
-	
 		>div {
 			width: 100%;
-			// width: 345px;
-			// height: 240px;
-			// background-image: url(../../images/works-img.jpg);
-			// background-size: cover;
-			// background-position: bottom center;
 			>img {
 				width: 100%;
 				max-width: 520px;
-				// height: 240px;
-				// max-height: 240px;
-				// object-fit: cover;
-				// object-position: bottom center;
+				@include mq(lg) {
+					height: 350px;
+				}
 			}
 			>p {
 				padding: 30px 0 50px 0;
 			}
 		}
-
-	.l-contents .works {
-		@include mq(lg) {
-			bottom: -30px;
-			left: 0;
-		}
-	}
-	.l-contents .culture {
-		@include mq(lg) {
-			bottom: -30px;
-			right: 0;
-		}
 	}
 }
-	
+
 .l-contents--archive {
-	background-color: #fff;
-	height: 410px;
+	// background-color: #fff;
+	width: 100%;
+	height: 440px;
+	position: relative;
+	padding: 40px 15px;
 	>div {
+		// height: 100%;
+
 		.topics {
 			font-weight: bold;
+			border-bottom: 1px solid #DDD;
+			margin-bottom: 19px;
 			.topics-date {
 				padding-bottom: 8px;
 				font-size: 10px;
@@ -175,6 +138,7 @@
 			}
 			.topics-title {
 				font-size: 12px;
+				padding-bottom: 20px; 
 				// font-weight: bold;
 				&.new-title {
 					padding-bottom: 15px
@@ -191,31 +155,35 @@
 }
 
 .l-contents--contact {
-		height: 900px;
-		padding: 40px 15px;
-		>div {
-			margin-bottom: 10px;
-			// width: 100%;
-			// height: 100%;
-			// padding: 40px 0;
-			>img {
-				// width: 100%;
-				height: 45%;
-				// object-fit: cover;
-				// object-position: top center;
-				margin: 10px 0 30px 0;
-				// @include mq(md) {
-				// 	width: 50%;
-				// }
-			}
-			.text__contact {
-				// font-weight: bold;
-				padding-bottom: 50px;
-			}
-			>button {
-				bottom: 0px;
-			}
+	// height: 900px;
+	height: 620px;
+	padding: 40px 15px;
+	background-color: #F2F2F2;
+	position: relative;
+	>div {
+		margin-bottom: 10px;
+		// width: 100%;
+		// height: 100%;
+		// padding: 40px 0;
+		>	img {
+			width: 100%;
+			// height: 45%;
+			// height: 50%;
+			height: 250px;
+			object-fit: cover;
+			// object-position: top center;
+			margin: 10px 0 30px 0;
+			// @include mq(md) {
+			// 	width: 50%;
+			// }
 		}
+		.text__contact {
+			// font-weight: bold;
+			padding-bottom: 50px;
+		}
+		// >button {
+		// 	bottom: 0px;
+		// }
 	}
 }
 // }
