@@ -13,10 +13,40 @@
 	&.about-us {
 		left: 40px;
 		bottom: 100px;
+		@include mq(md) {
+			left: 120px;
+		}
 	}
-	&.works, &.culture, &.archive, &.contact{
+	&.works, &.culture, &.contact{
 		left: 15px;
 		bottom: 35px;
+		@include mq(md) {
+			left: 30px;
+		}
+		@include mq(lg) {
+			left: 0;
+			bottom: -30px;
+		}
+	}
+	&.archive {
+		left: 15px;
+		bottom: 35px;
+		@include mq(md) {
+			left: 30px;
+		}
+		@include mq(lg) {
+			left: auto;
+			right: 0;
+			// bottom: 0;
+			bottom: -80px;
+			// right: 13vw;
+		}
+	}
+	&.contact {
+		bottom: 50px;
+		@include mq(lg) {
+			bottom: 0;
+		}
 	}
 	// &.archive {
 	// 	bottom: 40px;
@@ -35,6 +65,9 @@
 	padding: 25px 15px;
 	display: flex;
 	justify-content: flex-end;
+	@include mq(lg) {
+		padding: 35px 60px;
+	}
 	.hamburger-box {
 		width: 35px;
 		height: 30px;

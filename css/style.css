@@ -33,6 +33,14 @@ layout
   z-index: 20;
 }
 
+@media screen and (min-width: 1280px) {
+  .l-header .l-header__bg {
+    width: 80%;
+    height: 640px;
+    background-size: cover;
+  }
+}
+
 .l-header .l-header__bg > img {
   display: inline-block;
   position: absolute;
@@ -42,12 +50,36 @@ layout
   margin: 20px;
 }
 
+@media screen and (min-width: 1280px) {
+  .l-header .l-header__bg > img {
+    top: 30px;
+    left: 60px;
+  }
+}
+
 .l-header .l-header__bg .main-copy {
+  width: 245px;
+  height: 250px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  right: -20%;
-  top: 20%;
+  right: -35%;
+  top: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .l-header .l-header__bg .main-copy {
+    right: -28%;
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-header .l-header__bg .main-copy {
+    width: 290px;
+    height: 320px;
+    right: -15%;
+  }
 }
 
 .l-header .l-header__bg .main-copy > h1 {
@@ -57,7 +89,7 @@ layout
 }
 
 .l-header .l-header__black-bg {
-  width: 50%;
+  width: 75%;
   height: 700px;
   background-color: #222222;
   position: absolute;
@@ -87,7 +119,7 @@ layout
   .l-contents--about-us {
     width: 1100px;
     height: 600px;
-    margin: 0 auto;
+    margin: 120px auto 0 auto;
   }
 }
 
@@ -113,44 +145,52 @@ layout
 @media screen and (min-width: 1280px) {
   .lg-flex-wrap--contents {
     width: 100%;
-    height: 700px;
-    display: flex;
-    background-color: #f0f0f0;
+    height: 770px;
     position: relative;
     bottom: 70px;
-    justify-content: space-between;
+    margin-bottom: -70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
     z-index: 100;
+    background-color: #f0f0f0;
   }
 }
 
 .lg-flex-wrap--contents .l-contents--works {
-  height: 100%;
+  width: 100%;
   padding: 40px 15px 50px 15px;
   position: relative;
+  top: 0;
+  left: 0;
   background-color: #f2f2f2;
-  z-index: 100;
 }
 
 @media screen and (min-width: 768px) {
   .lg-flex-wrap--contents .l-contents--works {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 40px 30px 50px 0;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .lg-flex-wrap--contents .l-contents--works {
-    height: 700px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 170px;
-    padding-top: 130px;
+    width: 520px;
+    height: 100%;
+    padding: 0;
   }
 }
 
 .lg-flex-wrap--contents .l-contents--works > div {
   width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .lg-flex-wrap--contents .l-contents--works > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+  }
 }
 
 .lg-flex-wrap--contents .l-contents--works > div > img {
@@ -160,6 +200,7 @@ layout
 
 @media screen and (min-width: 1280px) {
   .lg-flex-wrap--contents .l-contents--works > div > img {
+    width: 100%;
     height: 350px;
   }
 }
@@ -169,6 +210,7 @@ layout
 }
 
 .lg-flex-wrap--contents .l-contents--culture {
+  width: 100%;
   height: 100%;
   padding: 40px 15px 50px 15px;
   position: relative;
@@ -177,25 +219,26 @@ layout
 
 @media screen and (min-width: 768px) {
   .lg-flex-wrap--contents .l-contents--culture {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 40px 30px 50px 30px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .lg-flex-wrap--contents .l-contents--culture {
-    height: 700px;
-    width: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-right: 170px;
-    padding-top: 130px;
+    width: 520px;
+    height: 100%;
   }
 }
 
 .lg-flex-wrap--contents .l-contents--culture > div {
   width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .lg-flex-wrap--contents .l-contents--culture > div {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .lg-flex-wrap--contents .l-contents--culture > div > img {
@@ -205,6 +248,7 @@ layout
 
 @media screen and (min-width: 1280px) {
   .lg-flex-wrap--contents .l-contents--culture > div > img {
+    width: 100%;
     height: 350px;
   }
 }
@@ -218,6 +262,30 @@ layout
   height: 440px;
   position: relative;
   padding: 40px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .l-contents--archive {
+    padding: 40px 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-contents--archive {
+    height: 470px;
+    padding: 0;
+  }
+}
+
+.l-contents--archive > div {
+  position: relative;
+}
+
+@media screen and (min-width: 1280px) {
+  .l-contents--archive > div {
+    width: 1100px;
+    margin: 0 auto 60px auto;
+  }
 }
 
 .l-contents--archive > div .topics {
@@ -255,8 +323,30 @@ layout
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .l-contents--contact {
+    padding: 40px 30px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-contents--contact {
+    height: 570px;
+    padding: 60px 0;
+  }
+}
+
 .l-contents--contact > div {
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .l-contents--contact > div {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 .l-contents--contact > div > img {
@@ -266,8 +356,40 @@ layout
   margin: 10px 0 30px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .l-contents--contact > div > img {
+    width: 70%;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-contents--contact > div > img {
+    width: 580px;
+    height: 390px;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: auto;
+    bottom: auto;
+  }
+}
+
 .l-contents--contact > div .text__contact {
   padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .l-contents--contact > div .text__contact {
+    width: 70%;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-contents--contact > div .text__contact {
+    width: 45%;
+  }
 }
 
 .l-footer {
@@ -308,9 +430,57 @@ object
   bottom: 100px;
 }
 
-.c-button--read-more.works, .c-button--read-more.culture, .c-button--read-more.archive, .c-button--read-more.contact {
+@media screen and (min-width: 768px) {
+  .c-button--read-more.about-us {
+    left: 120px;
+  }
+}
+
+.c-button--read-more.works, .c-button--read-more.culture, .c-button--read-more.contact {
   left: 15px;
   bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-button--read-more.works, .c-button--read-more.culture, .c-button--read-more.contact {
+    left: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .c-button--read-more.works, .c-button--read-more.culture, .c-button--read-more.contact {
+    left: 0;
+    bottom: -30px;
+  }
+}
+
+.c-button--read-more.archive {
+  left: 15px;
+  bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-button--read-more.archive {
+    left: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .c-button--read-more.archive {
+    left: auto;
+    right: 0;
+    bottom: -80px;
+  }
+}
+
+.c-button--read-more.contact {
+  bottom: 50px;
+}
+
+@media screen and (min-width: 1280px) {
+  .c-button--read-more.contact {
+    bottom: 0;
+  }
 }
 
 .c-button--hamburger {
@@ -319,6 +489,12 @@ object
   padding: 25px 15px;
   display: flex;
   justify-content: flex-end;
+}
+
+@media screen and (min-width: 1280px) {
+  .c-button--hamburger {
+    padding: 35px 60px;
+  }
 }
 
 .c-button--hamburger .hamburger-box {
@@ -367,6 +543,12 @@ object
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.1rem;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1280px) {
+  .c-heading--lv2 {
+    padding-top: 60px;
+  }
 }
 
 /*utility

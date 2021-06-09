@@ -17,6 +17,11 @@
 		background-position: top center;
 		// background-size: cover;
 		z-index: 20;
+		@include mq(lg) {
+			width: 80%;
+			height: 640px;
+			background-size: cover;
+		}
 
 		>img {
 			display: inline-block;
@@ -25,8 +30,15 @@
 			left: 0;
 			z-index: 30;
 			margin: 20px;
-
+			@include mq(lg) {
+			top: 30px;
+			left: 60px;
+			// 	width: 100%;
+			// 	height: auto;
+			// 	object-fit: cover;
+			}
 		}
+
 		// >div {
 		// 	width: 100px;
 		// 	height: 100px;
@@ -34,11 +46,22 @@
 		// 	z-index: 30;
 		// }
 		.main-copy {
+			width: 245px;
+			height: 250px;
 			color: #fff;
 			font-family: 'Montserrat', sans-serif;
 			position: absolute;
-			right: -20%;
-			top: 20%;
+			right: -35%;
+			top: 25%;
+			@include mq(md) {
+				right: -28%;
+				top: 30%;
+			}
+			@include mq(lg) {
+				width: 290px;
+				height: 320px;
+				right: -15%;
+			}
 			// >p {
 			// 	font-size: 16px;
 			// }
@@ -51,7 +74,7 @@
 	}
 
 	.l-header__black-bg {
-		width: 50%;
+		width: 75%;
 		height: 700px;
 		background-color: #222222;
 		position: absolute;
