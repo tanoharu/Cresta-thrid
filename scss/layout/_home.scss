@@ -81,6 +81,8 @@
 		top: 0;
 		right: 0;
 		z-index: 10;
+		@include mq(lg) {
+		height: 730px;
+		}
 	}
 }
-

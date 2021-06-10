@@ -17,23 +17,36 @@
 			left: 120px;
 		}
 	}
-	&.works, &.culture, &.contact{
+	&.works {
 		left: 15px;
-		bottom: 35px;
+		// bottom: 35px;
+		bottom: 0;
+		@include mq(md) {
+			left: 30px;
+			bottom: 30px;
+		}
+		@include mq(lg) {
+			left: 0;
+			bottom: -15px;
+		}
+	}
+	&.culture {
+		left: 15px;
+		bottom: 40px;
 		@include mq(md) {
 			left: 30px;
 		}
 		@include mq(lg) {
 			left: 0;
-			bottom: -30px;
+			bottom: -15px;
 		}
 	}
 	&.archive {
-		left: 15px;
-		bottom: 35px;
-		@include mq(md) {
-			left: 30px;
-		}
+		// left: 15px;
+		bottom: -70px;
+		// @include mq(md) {
+		// 	left: 0;
+		// }
 		@include mq(lg) {
 			left: auto;
 			right: 0;
@@ -43,7 +56,11 @@
 		}
 	}
 	&.contact {
+		left: 15px;
 		bottom: 50px;
+		@include mq(md) {
+			left: 30px;
+		}
 		@include mq(lg) {
 			bottom: 0;
 		}
