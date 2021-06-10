@@ -12,6 +12,10 @@ body {
   font-family: 'Yu Gothic';
 }
 
+body.nonscroll {
+  overflow: hidden;
+}
+
 /*=============================================
 layout
 =============================================*/
@@ -419,11 +423,164 @@ layout
   line-height: 50px;
 }
 
+.l-header {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+
+.l-header .l-header-about__bg {
+  width: 70%;
+  height: 390px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../images/heading-img.jpg);
+  background-position: top center;
+  z-index: 20;
+}
+
+@media screen and (min-width: 768px) {
+  .l-header .l-header-about__bg {
+    height: 530px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-header .l-header-about__bg {
+    width: 80%;
+    height: 390px;
+    background-size: cover;
+  }
+}
+
+.l-header .l-header-about__bg > img {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  margin: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .l-header .l-header-about__bg > img {
+    top: 30px;
+    left: 60px;
+  }
+}
+
+.l-header .l-header-about__bg .main-copy {
+  width: 100%;
+  height: 250px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: -35%;
+  top: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .l-header .l-header-about__bg .main-copy {
+    right: -28%;
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-header .l-header-about__bg .main-copy {
+    width: 290px;
+    height: 320px;
+    right: -15%;
+  }
+}
+
+.l-header .l-header-about__bg .main-copy > h1 {
+  font-size: 56px;
+  letter-spacing: 0.25rem;
+  font-weight: 800;
+}
+
+.l-header .l-header__black-bg {
+  width: 75%;
+  height: 700px;
+  background-color: #222222;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+@media screen and (min-width: 1280px) {
+  .l-header .l-header__black-bg {
+    height: 730px;
+  }
+}
+
 /*=============================================
 object
 =============================================*/
 /*project
 ---------------------------------------------*/
+.p-hamburger-menu {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+
+.p-hamburger-menu > div {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  z-index: 100;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .p-hamburger-menu > div {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .p-hamburger-menu > div {
+    width: 40%;
+  }
+}
+
+.p-hamburger-menu > div > img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 40px;
+}
+
+.p-hamburger-menu > div > ul {
+  list-style: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.p-hamburger-menu > div > ul > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.p-hamburger-menu > div > ul > a > li {
+  padding-bottom: 30px;
+}
+
 /*component
 ---------------------------------------------*/
 .c-button--read-more {
@@ -517,58 +674,76 @@ object
 }
 
 .c-button--hamburger {
-  width: 100%;
-  height: 250px;
-  padding: 25px 15px;
-  display: flex;
-  justify-content: flex-end;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  top: 25px;
+  right: 15px;
+  margin: 0 0 0 auto;
+  z-index: 100;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .c-button--hamburger {
+    top: 35px;
+    right: 30px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .c-button--hamburger {
-    padding: 35px 60px;
+    right: 60px;
   }
 }
 
-.c-button--hamburger .hamburger-box {
-  width: 35px;
-  height: 30px;
-  position: relative;
-}
-
-.c-button--hamburger .hamburger-box > span {
-  display: inline-block;
+.c-button--hamburger .bar {
   width: 35px;
   height: 3px;
+  display: block;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   position: absolute;
+  top: 0px;
   left: 0;
 }
 
-.c-button--hamburger .hamburger-box > span:nth-of-type(1) {
-  top: 6px;
+.c-button--hamburger .bar.bar_top {
+  top: 28px;
 }
 
-.c-button--hamburger .hamburger-box > span:nth-of-type(2) {
-  top: 13.5px;
+.c-button--hamburger .bar.bar_mid {
+  top: 35px;
 }
 
-.c-button--hamburger .hamburger-box > span:nth-of-type(3) {
-  bottom: 6px;
+.c-button--hamburger .bar.bar_bottom {
+  top: 42px;
 }
 
-.c-button--hamburger .menu-box {
+.c-button--hamburger .button-text_menu {
+  display: block;
+  width: 55px;
   height: 30px;
-  padding-left: 5px;
-  font-size: 12px;
+  position: absolute;
+  top: 25px;
+  right: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  color: #fff;
 }
 
-.c-button--hamburger .menu-box > span {
-  line-height: 30px;
+.c-button--hamburger.close .bar_top {
+  transform: translateY(5px) rotate(30deg);
+  transition: transform .3s;
+}
+
+.c-button--hamburger.close .bar_mid {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.c-button--hamburger.close .bar_bottom {
+  transform: translateY(-10px) rotate(-30deg);
+  transition: transform .3s;
 }
 
 .c-heading--lv2 {
