@@ -3,6 +3,8 @@ foundation
 =============================================*/
 /*mediaQuery
 ---------------------------------------*/
+/*code
+---------------------------------------*/
 /*all
 ---------------------------------------*/
 body {
@@ -14,6 +16,10 @@ body {
 
 body.nonscroll {
   overflow: hidden;
+}
+
+.about-body {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*=============================================
@@ -425,7 +431,7 @@ layout
 
 .l-header {
   width: 100%;
-  height: 700px;
+  height: 450px;
   position: relative;
   margin-bottom: 3.75rem;
 }
@@ -478,7 +484,7 @@ layout
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   right: -35%;
-  top: 25%;
+  top: 40%;
 }
 
 @media screen and (min-width: 768px) {
@@ -502,9 +508,9 @@ layout
   font-weight: 800;
 }
 
-.l-header .l-header__black-bg {
+.l-header .l-header-about__black-bg {
   width: 75%;
-  height: 700px;
+  height: 450px;
   background-color: #222222;
   position: absolute;
   top: 0;
@@ -512,10 +518,81 @@ layout
   z-index: 10;
 }
 
-@media screen and (min-width: 1280px) {
-  .l-header .l-header__black-bg {
-    height: 730px;
+@media screen and (min-width: 768px) {
+  .l-header .l-header-about__black-bg {
+    height: 650px;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .l-header .l-header-about__black-bg {
+    height: 460px;
+  }
+}
+
+.l-about-us-wrap {
+  padding: 0 15px;
+}
+
+.l-about-us-wrap p {
+  padding-bottom: 2rem;
+  font-size: 14px;
+}
+
+.l-about-us-wrap .p-contents-ceo > img {
+  display: block;
+  position: relative;
+  top: 0;
+  left: -15px;
+  z-index: 5;
+}
+
+.l-about-us-wrap .p-contents-ceo .ceo-text {
+  display: block;
+  position: relative;
+  bottom: 80px;
+  left: 0;
+  padding: 100px 8%;
+  background-color: #f0f0f0;
+  z-index: 3;
+}
+
+.l-about-us-wrap .p-contents-company {
+  font-size: 14px;
+}
+
+.l-about-us-wrap .p-contents-company > h2 {
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.l-about-us-wrap .p-contents-company table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.l-about-us-wrap .p-contents-company table .table-item__title {
+  width: 40%;
+  padding: 20px 0;
+}
+
+.l-about-us-wrap .p-contents-company table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.l-map {
+  width: 100%;
+  height: 470px;
+  overflow: hidden;
+  padding: 0 15px;
+  margin: 40px 0 80px 0;
+}
+
+.l-map iframe {
+  width: 100%;
+  height: 860px;
+  margin-top: -170px;
 }
 
 /*=============================================
@@ -757,6 +834,13 @@ object
   .c-heading--lv2 {
     padding-top: 60px;
   }
+}
+
+.c-heading--lv3 {
+  font-weight: normal;
+  padding-bottom: 2rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 24px;
 }
 
 /*utility

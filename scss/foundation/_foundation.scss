@@ -17,6 +17,10 @@ $breakpoints: (
 }
 
 
+/*code
+---------------------------------------*/
+$base-color300: #f0f0f0;
+$point-color300: #ddd;
 /*all
 ---------------------------------------*/
 body {
@@ -28,4 +32,8 @@ body {
 	&.nonscroll {
 		overflow: hidden;
 	}
+}
+.about-body {
+	font-family: 'Noto Sans JP', sans-serif;
+
 }
