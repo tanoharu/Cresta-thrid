@@ -7,6 +7,9 @@
 	@include mq(md) {
 		height: 230px;
 	}
+	@include mq(lg) {
+		height: 360px;
+	}
 	iframe {
 		width: 100%;
 		height: 860px;
