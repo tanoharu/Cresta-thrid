@@ -10,8 +10,9 @@ layout
 @import "../scss/layout/home";
 @import "../scss/layout/contents";
 @import "../scss/layout/footer";
-@import "../scss/layout/about";
 @import "../scss/layout/map";
+@import "../scss/layout/about";
+@import "../scss/layout/contact";
 
 /*=============================================
 object
@@ -23,6 +24,7 @@ object
 ---------------------------------------------*/
 @import "../scss/object/component/button";
 @import "../scss/object/component/heading";
+@import "../scss/object/component/scroll";
 
 /*utility
 ---------------------------------------------*/

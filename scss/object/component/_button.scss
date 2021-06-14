@@ -89,6 +89,7 @@
 	@include mq(lg) {
 		right: 60px;
 	}
+
 	.bar {
 		width: 35px;
 		height: 3px;
@@ -125,33 +126,7 @@
 		right: 0;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 800;
-		// @include mq(md) {
-		// 	top: 35px;
-		// 	right: 30px;
-		// }
-		// @include mq(lg) {
-		// 	right: 60px;
-		// }
-		// // left: 50px;   
-		// right: 
 	}
-	// .menu-box {
-	// 	// width: 35px;
-	// 	height: 30px;
-	// 	padding-left: 5px;
-	// 	// position: absolute;
-	// 	// top: 0;
-	// 	// right: 0;
-	// 	// background-color: lavender;
-	// 	font-size: 12px;
-	// 	font-family: 'Montserrat', sans-serif;
-	// 	font-weight: 800;
-	// 	color: #fff;
-	// 	// vertical-align: middle;
-	// 	>span {
-	// 		line-height: 30px;
-	// 	}
-	// }
 }
 .c-button--hamburger.close .bar_top {
 	// transform: translate(-50%, 10px) rotate(45deg);
@@ -168,4 +143,11 @@
 	// transform: translateY(-10px) translateX(-10px) rotate(-30deg);
 	transform: translateY(-10px) rotate(-30deg);
 	transition: transform .3s;
+}
+
+.c-button--hamburger__about {
+	@extend .c-button--hamburger;
+	// background-color: red;
+	top: 0;
+	right: 10px;
 }
