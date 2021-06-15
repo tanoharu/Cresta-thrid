@@ -6,6 +6,9 @@
 	left: -70px;
 	transform: rotate( -90deg);
 	z-index: 30;
+	@include mq(md) {
+		display: none;
+	}
 
 	.scroll-black {
 		width: 35.5px;

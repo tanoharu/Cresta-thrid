@@ -1,0 +1,67 @@
+.c-radio-btns {
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px 35px 10px;
+	@include mq(md) {
+		display: block;
+		// padding-bottom: 35px;
+	}
+	// .c-radio-btns input[type=radio] {
+	// > input {
+	// 	margin-bottom: 20px;
+	// }
+	& input[type=radio] {
+		display: none;
+	}
+	// .c-radio-btns label {
+	& label {
+		position: relative;
+		padding-left: 30px;
+		padding-bottom: 10px;
+		@include mq(md) {
+			margin-right: 50px;
+			// padding-bottom: 35px;
+			// padding-bottom: 0;
+		}
+		// line-height: 1.5rem;
+	}
+	// .c-radio-btns input[type=radio] + label::before {
+	& input[type=radio] + label::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #fff;
+		border: 1px solid #000;
+		left: 3px;
+		top: 3px;
+		@include mq(md) {
+			left: 0;
+			top: 0;
+		}
+	}
+	// .c-radio-btns input[type=radio] + label::after {
+	& input[type=radio] + label::after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: #000;
+		left: 7px;
+		top: 7px;
+		opacity: 0;
+		transition: .3s;
+		@include mq(md) {
+			left: 4px;
+			top: 4px;
+		}
+	}
+	// .c-radio-btns input[type=radio]:checked + label::after {
+	& input[type=radio]:checked + label::after {
+		opacity: 1;
+	}
+}

@@ -1,11 +1,35 @@
+.c-heading--lv1 {
+	font-size: 56px;
+	letter-spacing: 0.25rem;
+	font-weight: 800;
+}
+.c-heading-contact--lv1 {
+	@extend .c-heading--lv1;
+// 	@include mq(md) {
+// 		position: relative;
+// 		// position: absolute;
+// 		top: auto;
+// 		bottom: 30%;
+// 		// right: 270px;
+// 		// left: -30px;
+// 	}
+// 	// @include mq(lg) {
+// 	// 	top: 0; 
+// 	// 	left: 0;
+// 	// 	left: auto;
+
+// 	// 	right: -100px;
+// 	// }
+}
+
 .c-heading--lv2 {
-		font-size: 28px;
-		font-family: 'Montserrat', sans-serif;
-		letter-spacing: 0.1rem;
-		margin-bottom: 30px;
-		@include mq(lg) {
-	// 	margin-bottom: 20px;
-			padding-top: 60px;
+	font-size: 28px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.1rem;
+	margin-bottom: 30px;
+	@include mq(lg) {
+		// 	margin-bottom: 20px;
+		padding-top: 60px;
 	}
 }
 .c-heading--lv3 {

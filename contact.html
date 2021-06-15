@@ -26,14 +26,14 @@
 			<div class="l-header-contact__bg">
 			</div>
 			<div class="l-header-contact__mask">
-				<img src="images/site-logo.png">
-				<div class="main-copy">
-					<h1>CONTACT</h1>
+				<img class="site-logo--contact" src="images/site-logo.png">
+				<div class="main-copy--contact">
+					<h1 class="c-heading-contact--lv1 ">CONTACT</h1>
 					<p>お問い合わせ</p>
 				</div>
 			</div>
 			<div class="l-header-contact__black-bg"></div>
-			<div class="c-button--hamburger__about">
+			<div class="c-button--hamburger__contact">
 				<span class="bar bar_top"></span>
 				<span class="bar bar_mid"></span>
 				<span class="bar bar_bottom"></span>
@@ -77,30 +77,27 @@
 			<form>
 				<div class="contact-form">
 					<p class="form-item-title">お問い合わせ種別<span class="required">必須</span></p>
-					<ul>
+					<!-- <ul> -->
 						<!-- <li>
 							<input type="radio" name="type" id="request" value="制作依頼" style="transform:scale(1.3);"><label for="request">&nbsp;制作依頼</label>
 						</li> -->
 						<!-- <li> -->
-						<li>
-							<labe class="radio">
-								<input class="radio-input" type="radio" name="type" value="制作依頼">
-								<span class="radio-text">&nbsp;制作依頼</span>
-							</label>
-						</li>
-						<li>
-							<label class="radio">
-								<input class="radio-input" type="radio" name="type" value="採用">
-								<span class="radio-text">&nbsp;採用</span>
-							</label>
-						</li>
-						<li>
-							<label class="radio"><input class="radio-input" type="radio" name="type" value="IR" style="transform:scale(1.3);">&nbsp;IR</label>
-						</li>
-						<li>
-							<label class="radio"><input class="radio-input" type="radio" name="type" value="その他" style="transform:scale(1.3);">&nbsp;その他</label>
-						</li>
-					</ul>
+						<!-- <li> -->
+						<div class="c-radio-btns">
+								<input id="radio-request" type="radio" name="radio" value="制作依頼"><label for="radio-request">&nbsp;制作依頼</label>
+								<!-- </li> -->
+								<!-- <li> -->
+							
+						<input id="radio-recruit" type="radio" name="radio" value="採用"><label for="radio-recruit">&nbsp;採用</label>
+								<!-- </li> -->
+								<!-- <li> -->
+						<input id="radio-ir" type="radio" name="radio" value="IR"><label for="radio-ir">&nbsp;IR</label>
+								<!-- </li> -->
+								<!-- <li> -->
+						<input id="radio-other" type="radio" name="radio" value="その他"><label for="radio-other">&nbsp;その他</label>
+							<!-- </li> -->
+							<!-- </ul> -->
+						</div>
 					<label class="form-item-title" for="company">会社名・団体名</label><br>
 					<input class="form-text" type="text" name="company"><br>
 
@@ -114,10 +111,10 @@
 					<input class="form-text" type="text" name="number"><br>
 
 					<label class="form-item-title" for="message">お問い合わせ内容<span class="required">必須</span></label><br>
-					<textarea class="form-text"></textarea><br>
-					<p class="form-item-title privacy-policy">PRIVACY POLICY</p>
+					<textarea class="form-textarea"></textarea><br>
+					<p class="form-item-title privacy-policy-title">PRIVACY POLICY</p>
 					<div class="privacy">
-						<p>個人情報保護方針</p>
+						<p class="privacy-bold">個人情報保護方針</p>
 						<p>株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。</p>
 						<br>
 						<p>1.個人情報の収集、利用</p>
@@ -142,12 +139,13 @@
 						<p>当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。</p>
 						<p>株式会社ファイアープレイス</p>
 						<p>044-589-4333</p>
-<!-- </p> -->
+					</div><!--privacy-->
+					<div class="checkbox">
+						<input id="privacy-check" type="checkbox" name="checkbox"><label for="privacy-check">個人情報の取り扱いについて同意のうえ送信します。</label>
 					</div>
-					<label for="check">
-						<input type="checkbox" name="check" style="transform:scale(1.3);">個人情報の取り扱いについて同意のうえ送信します。
-					</label>
-					<p class="button-submit"><input type="submit" value="送信"></p>
+					<a href="#">
+						<p class="c-button--submit"><input type="submit" value="送信"></p>
+					</a>
 				</div>
 			</form>
 		</div>

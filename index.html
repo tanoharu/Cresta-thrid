@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- veiwport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--ICON-->
-	<!--FAVICON-->
 	<!--JS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/jquery.js"></script>
@@ -22,65 +20,70 @@
 <header>
 	<div class="l-header">
 		<div class="l-header__bg">
-			<img src="images/site-logo.png">
+			<img class="site-logo" src="images/site-logo.png">
 			<div class="main-copy">
 				<p>デザインで人を笑顔にする会社</p>
 				<p>DIGSMILE INC.</p>
-				<h1>DESIGN<br>FOR<br>SMILE.</h1>
+				<h1 class="c-heading--lv1">DESIGN<br>FOR<br>SMILE.</h1>
 			</div>
-		</div>
+		</div><!--/.l-header__bg-->
 		<div class="l-header__black-bg"></div>
-		<div class="c-button--hamburger">
-				<span class="bar bar_top"></span>
-				<span class="bar bar_mid"></span>
-				<span class="bar bar_bottom"></span>
-				<span class="button-text_menu">MENU</span>
-		</div><!--/.c-button--hamburger-->
-		<div class="p-hamburger-menu">
-			<div>
-				<img src="images/nav-menu_icon.png">
-				<ul>
-					<a href="#"><li>ABOUT US</li></a>
-					<a href="#"><li>WORKS</li></a>
-					<a href="#"><li>CULTURE</li></a>
-					<a href="#"><li>TOPICS</li></a>
-					<a href="#"><li>CONTACT</li></a>
-				</ul>
-			</div>
-		</div>
+			<div class="c-button--hamburger">
+					<span class="bar bar_top"></span>
+					<span class="bar bar_mid"></span>
+					<span class="bar bar_bottom"></span>
+					<span class="button-text_menu">MENU</span>
+			</div><!--/.c-button--hamburger-->
+			<div class="p-hamburger-menu">
+				<div>
+					<img src="images/nav-menu_icon.png">
+					<ul>
+						<a href="#"><li>ABOUT US</li></a>
+						<a href="#"><li>WORKS</li></a>
+						<a href="#"><li>CULTURE</li></a>
+						<a href="#"><li>TOPICS</li></a>
+						<a href="#"><li>CONTACT</li></a>
+					</ul>
+			</div><!--/.p-hamburger-menu-->
+		</div><!--/.l-header__black-bg-->
 	</div><!--/.l-header-->
 </header>
 
-<!-- <div class="l-contents-wrap"> -->
-	<section>
-		<div class="p-contents--about-us">
-			<div class="l-contents__text">
-				<h2 class="c-heading--lv2">ABOUT US</h2>
-				<p class="text__about-us">DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
+<section>
+	<div class="p-contents--about-us">
+		<div class="l-contents__text">
+			<h2 class="c-heading--lv2">ABOUT US</h2>
+			<p class="text__about-us">DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
+			<a href="#">
 				<button class="c-button--read-more about-us">READ MORE</button>
-			</div>
+			</a>
 		</div>
-	</section>
-	
-	<div class="lg-flex-wrap--contents">
-			<div class="p-contents--works">
-				<div>
-					<h2 class="c-heading--lv2">WORKS</h2>
-					<img src="images/works-img.jpg">
-					<p>DIGSMILEの制作実績を紹介します。</p>
-					<button class="c-button--read-more works">READ MORE</button>
-				</div>
-			</div>
-
-			<div class="p-contents--culture">
-				<div>
-					<h2 class="c-heading--lv2">CULTURE</h2>
-					<img src="images/culture-img.jpg">
-					<p>DIGSMILEの社内文化について紹介します。</p>
-					<button class="c-button--read-more culture">READ MORE</button>
-				</div>
-			</div>
 	</div>
+</section>
+
+<div class="lg-flex-wrap--contents">
+	<div class="p-contents--works">
+		<div>
+			<h2 class="c-heading--lv2">WORKS</h2>
+			<img src="images/works-img.jpg">
+			<p>DIGSMILEの制作実績を紹介します。</p>
+			<a href="#">
+				<button class="c-button--read-more works">READ MORE</button>
+			</a>
+		</div>
+	</div><!--/.p-contents--works-->
+
+	<div class="p-contents--culture">
+		<div>
+			<h2 class="c-heading--lv2">CULTURE</h2>
+			<img src="images/culture-img.jpg">
+			<p>DIGSMILEの社内文化について紹介します。</p>
+			<a href="#">
+				<button class="c-button--read-more culture">READ MORE</button>
+			</a>
+		</div>
+	</div>
+</div><!--/.lg-flex-wrap--contents-->
 
 <archive>
 	<div class="p-contents--archive">
@@ -101,7 +104,9 @@
 				<p class="topics-title">新年明けましておめでとうございます</p>
 			</div>
 			<span class="topics-line"></span>
-			<button class="c-button--read-more archive">READ MORE</button>
+			<a>
+				<button class="c-button--read-more archive">READ MORE</button>
+			</a>
 		</div>
 	</div>
 </archive>
@@ -112,11 +117,12 @@
 			<img src="images/recruit-img.png">
 			<h2 class="c-heading--lv2">CONTACT</h2>
 			<p class="text__contact">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
-			<button class="c-button--read-more contact">READ MORE</button>
+			<a href="#">
+				<button class="c-button--read-more contact">READ MORE</button>
+			</a>
 		</div>
-	</div>
+	</div><!--/.p-contents--contact-->
 </section>
-<!-- </div> -->
 
 <footer>
 	<div class="l-footer">
