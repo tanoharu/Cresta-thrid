@@ -3,12 +3,15 @@
 	height: 470px;
 	overflow: hidden;
 	padding: 0 15px;
-	margin: 40px 0 80px 0;
+	margin: 40px auto 80px auto;
 	@include mq(md) {
 		height: 230px;
+		padding: 0 30px;
 	}
 	@include mq(lg) {
+		width: 1100px;
 		height: 360px;
+		padding: 0;
 	}
 	iframe {
 		width: 100%;

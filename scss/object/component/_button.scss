@@ -10,26 +10,24 @@
 	background-color: black;
 	margin-bottom: 0;
 	position: absolute;
-	// bottom: 0;
 	left: 0;
 	&.about-us {
-		left: 40px;
 		bottom: 100px;
+		left: 40px;
 		@include mq(md) {
 			left: 120px;
 		}
 	}
 	&.works {
-		left: 15px;
-		// bottom: 35px;
 		bottom: 0;
+		left: 15px;
 		@include mq(md) {
-			left: 30px;
 			bottom: 30px;
+			left: 30px;
 		}
 		@include mq(lg) {
-			left: 0;
 			bottom: -15px;
+			left: 0;
 		}
 	}
 	&.culture {
@@ -39,22 +37,16 @@
 			left: 30px;
 		}
 		@include mq(lg) {
-			left: 0;
 			bottom: -15px;
+			left: 0;
 		}
 	}
 	&.archive {
-		// left: 15px;
 		bottom: -70px;
-		// @include mq(md) {
-		// 	left: 0;
-		// }
 		@include mq(lg) {
-			left: auto;
 			right: 0;
-			// bottom: 0;
 			bottom: -80px;
-			// right: 13vw;
+			left: auto;
 		}
 	}
 	&.contact {
@@ -64,6 +56,7 @@
 			left: 30px;
 		}
 		@include mq(lg) {
+			left: 0;
 			bottom: 0;
 		}
 	}
@@ -75,16 +68,15 @@
 	width: 100px;
 	height: 50px;
 	position: relative;
-	// top: 25px;
 	right: 15px;
 	margin: 0 0 0 auto;
 	z-index: 100;
 	color: #fff;
 	@include mq(md) {
-		top: 35px;
 		right: 30px;
 	}
 	@include mq(lg) {
+		top: 30px;
 		right: 60px;
 	}
 
@@ -97,7 +89,6 @@
 		left: 0;
 		border-radius: 15px;
 		background-color: #fff;
-
 		&.bar_top {
 			top: 28px;
 		}
@@ -105,7 +96,6 @@
 			top: 35px;
 		}
 		&.bar_bottom {
-			// bottom: 0px;
 			top: 42px;
 		}
 	}
@@ -114,7 +104,6 @@
 		display: block;
 		width: 55px;
 		height: 30px;
-		// position: relative;
 		position: absolute;
 		top: 25px;
 		right: 0;
@@ -147,46 +136,17 @@
 	@extend .c-button--hamburger;
 	top: 0;
 	right: 10px;
-	// width: 50px;
-	.bar {
-	// 	width: 35px;
-	// 	height: 3px;
-	// 	display: block;
-	// 	background-color: #fff;
-	// 	border-radius: 15px;
-	// 	      // transform: translateX(-50%);
 
-	// 	position: absolute;
-	// 	// position: relative;
-	// 	top: 0px;
-		// right: 50px;
+	.bar {
 		left: 3px;
 		z-index: 400;
-	// 	&.bar_top {
-	// 		top: 28px;
-	// 	}
-	// 	&.bar_mid {
-	// 		top: 35px;
-	// 	}
-	// 	&.bar_bottom {
-	// 		// bottom: 0px;
-	// 		top: 42px;
-	// 	}
-		
 	}
 		.button-text_menu {
-		// display: block;
-		// width: 55px;
-		// height: 30px;
-		// // position: relative;
-		// position: absolute;
 		top: 28px;
-		// right: 0;
 		font-size: 14px;
-		// font-family: 'Montserrat', sans-serif;
-		// font-weight: 800;
 	}
 }
+
 .c-button--hamburger__contact.close .bar_top {
 	transform: translateY(5px) rotate(30deg);
 	transition: transform .3s;
@@ -206,10 +166,10 @@
 	width: 160px;
 	height: 36px;
 	margin: 40px auto 80px auto;
+	text-align: center;
 	font-size: 14px;
 	font-weight: bold;
 	background-color: #000;
 	color: #fff;
-	text-align: center;
 	line-height: 36px;
 }

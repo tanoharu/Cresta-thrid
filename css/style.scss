@@ -8,7 +8,6 @@ foundation
 layout
 =============================================*/
 @import "../scss/layout/home";
-@import "../scss/layout/contents";
 @import "../scss/layout/footer";
 @import "../scss/layout/map";
 @import "../scss/layout/about";
@@ -20,6 +19,10 @@ object
 /*project
 ---------------------------------------------*/
 @import "../scss/object/project/hamburger";
+@import "../scss/object/project/contents--about";
+@import "../scss/object/project/contents--works-culture";
+@import "../scss/object/project/contents--archive";
+@import "../scss/object/project/contents--contact";
 /*component
 ---------------------------------------------*/
 @import "../scss/object/component/button";
