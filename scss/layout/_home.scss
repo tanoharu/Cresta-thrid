@@ -20,6 +20,7 @@
 		}
 
 		.site-logo {
+			width: 190px;
 			display: inline-block;
 			position: absolute;
 			top: 0;
@@ -27,6 +28,7 @@
 			z-index: 30;
 			margin: 20px;
 			@include mq(lg) {
+			width: 260px;
 			top: 30px;
 			left: 60px;
 			}

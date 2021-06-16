@@ -7,14 +7,14 @@ foundation
 ---------------------------------------*/
 /*all
 ---------------------------------------*/
-body {
+html, body {
   width: 100%;
   height: 100%;
   color: #333333;
   font-family: 'Yu Gothic';
 }
 
-body.nonscroll {
+html.nonscroll, body.nonscroll {
   overflow: hidden;
 }
 
@@ -32,7 +32,7 @@ layout
   margin-bottom: 3.75rem;
 }
 
-.l-header .l-header__bg, .l-header-about .l-header__bg, .l-header-contact .l-header__bg, .l-header-about .l-header-about__bg, .l-header-contact .l-header-contact__bg {
+.l-header .l-header__bg, .l-header-about .l-header__bg, .l-header-contact .l-header__bg, .l-header-contact .l-header-contact__bg {
   width: 70%;
   height: 700px;
   position: absolute;
@@ -44,14 +44,15 @@ layout
 }
 
 @media screen and (min-width: 1280px) {
-  .l-header .l-header__bg, .l-header-about .l-header__bg, .l-header-contact .l-header__bg, .l-header-about .l-header-about__bg, .l-header-contact .l-header-contact__bg {
+  .l-header .l-header__bg, .l-header-about .l-header__bg, .l-header-contact .l-header__bg, .l-header-contact .l-header-contact__bg {
     width: 80%;
     height: 640px;
     background-size: cover;
   }
 }
 
-.l-header .l-header__bg .site-logo, .l-header-about .l-header__bg .site-logo, .l-header-contact .l-header__bg .site-logo, .l-header-about .l-header-about__bg .site-logo, .l-header-contact .l-header-contact__bg .site-logo, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header__bg .site-logo--contact, .l-header-about .l-header-about__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-about .l-header-about__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header-about .l-header-about__bg .site-logo--contact, .l-header-about .l-header-contact .l-header-about__bg .l-header-contact__mask .site-logo--contact, .l-header-about .l-header-contact .l-header-contact__mask .l-header-about__bg .site-logo--contact, .l-header-contact .l-header-contact__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header-contact__bg .site-logo--contact {
+.l-header .l-header__bg .site-logo, .l-header-about .l-header__bg .site-logo, .l-header-contact .l-header__bg .site-logo, .l-header-contact .l-header-contact__bg .site-logo, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header__bg .site-logo--contact, .l-header-contact .l-header-contact__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header-contact__bg .site-logo--contact {
+  width: 190px;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -61,13 +62,14 @@ layout
 }
 
 @media screen and (min-width: 1280px) {
-  .l-header .l-header__bg .site-logo, .l-header-about .l-header__bg .site-logo, .l-header-contact .l-header__bg .site-logo, .l-header-about .l-header-about__bg .site-logo, .l-header-contact .l-header-contact__bg .site-logo, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header__bg .site-logo--contact, .l-header-about .l-header-about__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-about .l-header-about__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header-about .l-header-about__bg .site-logo--contact, .l-header-about .l-header-contact .l-header-about__bg .l-header-contact__mask .site-logo--contact, .l-header-about .l-header-contact .l-header-contact__mask .l-header-about__bg .site-logo--contact, .l-header-contact .l-header-contact__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header-contact__bg .site-logo--contact {
+  .l-header .l-header__bg .site-logo, .l-header-about .l-header__bg .site-logo, .l-header-contact .l-header__bg .site-logo, .l-header-contact .l-header-contact__bg .site-logo, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header__bg .site-logo--contact, .l-header-contact .l-header-contact__bg .l-header-contact__mask .site-logo--contact, .l-header-contact .l-header-contact__mask .l-header-contact__bg .site-logo--contact {
+    width: 260px;
     top: 30px;
     left: 60px;
   }
 }
 
-.l-header .l-header__bg .main-copy, .l-header-about .l-header__bg .main-copy, .l-header-contact .l-header__bg .main-copy, .l-header-about .l-header-about__bg .main-copy, .l-header-contact .l-header-contact__bg .main-copy, .l-header-about .l-header-about__bg .main-copy--about, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header__bg .main-copy--contact, .l-header-about .l-header-about__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-about .l-header-about__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header-about .l-header-about__bg .main-copy--contact, .l-header-about .l-header-contact .l-header-about__bg .l-header-contact__mask .main-copy--contact, .l-header-about .l-header-contact .l-header-contact__mask .l-header-about__bg .main-copy--contact, .l-header-contact .l-header-contact__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header-contact__bg .main-copy--contact {
+.l-header .l-header__bg .main-copy, .l-header-about .l-header__bg .main-copy, .l-header-contact .l-header__bg .main-copy, .l-header-contact .l-header-contact__bg .main-copy, .l-header .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header .l-header__bg .main-copy--about, .l-header-about .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-about .l-header__bg .main-copy--about, .l-header-contact .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-contact .l-header__bg .main-copy--about, .l-header-contact .l-header-contact__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-contact .l-header-contact__bg .main-copy--about {
   width: 245px;
   height: 250px;
   position: absolute;
@@ -78,27 +80,27 @@ layout
 }
 
 @media screen and (min-width: 768px) {
-  .l-header .l-header__bg .main-copy, .l-header-about .l-header__bg .main-copy, .l-header-contact .l-header__bg .main-copy, .l-header-about .l-header-about__bg .main-copy, .l-header-contact .l-header-contact__bg .main-copy, .l-header-about .l-header-about__bg .main-copy--about, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header__bg .main-copy--contact, .l-header-about .l-header-about__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-about .l-header-about__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header-about .l-header-about__bg .main-copy--contact, .l-header-about .l-header-contact .l-header-about__bg .l-header-contact__mask .main-copy--contact, .l-header-about .l-header-contact .l-header-contact__mask .l-header-about__bg .main-copy--contact, .l-header-contact .l-header-contact__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header-contact__bg .main-copy--contact {
+  .l-header .l-header__bg .main-copy, .l-header-about .l-header__bg .main-copy, .l-header-contact .l-header__bg .main-copy, .l-header-contact .l-header-contact__bg .main-copy, .l-header .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header .l-header__bg .main-copy--about, .l-header-about .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-about .l-header__bg .main-copy--about, .l-header-contact .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-contact .l-header__bg .main-copy--about, .l-header-contact .l-header-contact__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-contact .l-header-contact__bg .main-copy--about {
     top: 30%;
     right: -28%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .l-header .l-header__bg .main-copy, .l-header-about .l-header__bg .main-copy, .l-header-contact .l-header__bg .main-copy, .l-header-about .l-header-about__bg .main-copy, .l-header-contact .l-header-contact__bg .main-copy, .l-header-about .l-header-about__bg .main-copy--about, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header__bg .main-copy--contact, .l-header-about .l-header-about__bg .l-header-contact .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-about .l-header-about__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header-about .l-header-about__bg .main-copy--contact, .l-header-about .l-header-contact .l-header-about__bg .l-header-contact__mask .main-copy--contact, .l-header-about .l-header-contact .l-header-contact__mask .l-header-about__bg .main-copy--contact, .l-header-contact .l-header-contact__bg .l-header-contact__mask .main-copy--contact, .l-header-contact .l-header-contact__mask .l-header-contact__bg .main-copy--contact {
+  .l-header .l-header__bg .main-copy, .l-header-about .l-header__bg .main-copy, .l-header-contact .l-header__bg .main-copy, .l-header-contact .l-header-contact__bg .main-copy, .l-header .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header .l-header__bg .main-copy--about, .l-header-about .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-about .l-header__bg .main-copy--about, .l-header-contact .l-header__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-contact .l-header__bg .main-copy--about, .l-header-contact .l-header-contact__bg .l-header-about__bg .main-copy--about, .l-header-about__bg .l-header-contact .l-header-contact__bg .main-copy--about {
     width: 290px;
     height: 320px;
     right: -15%;
   }
 }
 
-.l-header .l-header__bg .main-copy > h1, .l-header-about .l-header__bg .main-copy > h1, .l-header-contact .l-header__bg .main-copy > h1, .l-header-about .l-header-about__bg .main-copy > h1, .l-header-contact .l-header-contact__bg .main-copy > h1, .l-header-about .l-header-about__bg .l-header__bg .main-copy--about > h1, .l-header-about .l-header-about__bg .main-copy--about > h1, .l-header-contact .l-header-about .l-header-about__bg .l-header-contact__bg .main-copy--about > h1, .l-header-about .l-header-about__bg .l-header-contact .l-header-contact__bg .main-copy--about > h1, .l-header .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact > h1, .l-header-about .l-header__bg .l-header-contact .l-header-contact__mask .main-copy--contact > h1, .l-header-contact .l-header__bg .l-header-contact__mask .main-copy--contact > h1, .l-header-contact .l-header-contact__mask .l-header__bg .main-copy--contact > h1, .l-header-about .l-header-about__bg .l-header-contact .l-header-contact__mask .main-copy--contact > h1, .l-header-contact .l-header-about .l-header-about__bg .l-header-contact__mask .main-copy--contact > h1, .l-header-contact .l-header-contact__mask .l-header-about .l-header-about__bg .main-copy--contact > h1, .l-header-about .l-header-contact .l-header-about__bg .l-header-contact__mask .main-copy--contact > h1, .l-header-about .l-header-contact .l-header-contact__mask .l-header-about__bg .main-copy--contact > h1, .l-header-contact .l-header-contact__bg .l-header-contact__mask .main-copy--contact > h1, .l-header-contact .l-header-contact__mask .l-header-contact__bg .main-copy--contact > h1 {
+.l-header .l-header__bg .main-copy > h1, .l-header-about .l-header__bg .main-copy > h1, .l-header-contact .l-header__bg .main-copy > h1, .l-header-contact .l-header-contact__bg .main-copy > h1, .l-header .l-header__bg .l-header-about__bg .main-copy--about > h1, .l-header-about__bg .l-header .l-header__bg .main-copy--about > h1, .l-header-about .l-header__bg .l-header-about__bg .main-copy--about > h1, .l-header-about__bg .l-header-about .l-header__bg .main-copy--about > h1, .l-header-contact .l-header__bg .l-header-about__bg .main-copy--about > h1, .l-header-about__bg .l-header-contact .l-header__bg .main-copy--about > h1, .l-header-contact .l-header-contact__bg .l-header-about__bg .main-copy--about > h1, .l-header-about__bg .l-header-contact .l-header-contact__bg .main-copy--about > h1 {
   letter-spacing: 0.25rem;
   font-size: 56px;
   font-weight: 800;
 }
 
-.l-header .l-header__black-bg, .l-header-about .l-header__black-bg, .l-header-contact .l-header__black-bg, .l-header .l-header-about__black-bg, .l-header-about .l-header-about__black-bg, .l-header-contact .l-header-about__black-bg, .l-header-contact .l-header-contact__black-bg {
+.l-header .l-header__black-bg, .l-header-about .l-header__black-bg, .l-header-contact .l-header__black-bg, .l-header-contact .l-header-contact__black-bg {
   width: 75%;
   height: 700px;
   position: absolute;
@@ -109,7 +111,7 @@ layout
 }
 
 @media screen and (min-width: 1280px) {
-  .l-header .l-header__black-bg, .l-header-about .l-header__black-bg, .l-header-contact .l-header__black-bg, .l-header .l-header-about__black-bg, .l-header-about .l-header-about__black-bg, .l-header-contact .l-header-about__black-bg, .l-header-contact .l-header-contact__black-bg {
+  .l-header .l-header__black-bg, .l-header-about .l-header__black-bg, .l-header-contact .l-header__black-bg, .l-header-contact .l-header-contact__black-bg {
     height: 730px;
   }
 }
@@ -174,58 +176,70 @@ layout
   }
 }
 
-.l-header-about .l-header-about__bg {
+.l-header-about__bg {
+  width: 80%;
   height: 390px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: url(../../images/heading-img.jpg);
   background-size: cover;
+  background-position: top center;
+  z-index: 20;
 }
 
 @media screen and (min-width: 768px) {
-  .l-header-about .l-header-about__bg {
+  .l-header-about__bg {
     height: 530px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .l-header-about .l-header-about__bg {
+  .l-header-about__bg {
     width: 80%;
     height: 390px;
     background-size: cover;
   }
 }
 
-.l-header-about .l-header-about__bg .main-copy--about {
+.l-header-about__bg .main-copy--about {
   width: 290px;
   top: 40%;
   right: -70px;
 }
 
 @media screen and (min-width: 768px) {
-  .l-header-about .l-header-about__bg .main-copy--about {
+  .l-header-about__bg .main-copy--about {
     top: 40%;
     right: -45px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .l-header-about .l-header-about__bg .main-copy--about {
+  .l-header-about__bg .main-copy--about {
     right: -8%;
   }
 }
 
-.l-header .l-header-about__black-bg, .l-header-about .l-header-about__black-bg, .l-header-contact .l-header-about__black-bg {
+.l-header-about__black-bg {
+  width: 70%;
   height: 450px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  z-index: 10;
 }
 
 @media screen and (min-width: 768px) {
-  .l-header .l-header-about__black-bg, .l-header-about .l-header-about__black-bg, .l-header-contact .l-header-about__black-bg {
+  .l-header-about__black-bg {
     width: 50%;
     height: 615px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .l-header .l-header-about__black-bg, .l-header-about .l-header-about__black-bg, .l-header-contact .l-header-about__black-bg {
+  .l-header-about__black-bg {
     height: 460px;
   }
 }
@@ -427,13 +441,12 @@ layout
 }
 
 .l-header-contact .l-header-contact__mask .main-copy--contact {
-  width: 100%;
   height: 250px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
-  right: -28%;
-  top: 40%;
+  position: relative;
+  right: 30px;
+  top: 10%;
   text-align: right;
 }
 
@@ -463,13 +476,12 @@ layout
 }
 
 .l-header-contact .l-header-contact__black-bg {
-  width: 50%;
+  width: 55%;
   height: 365px;
 }
 
 @media screen and (min-width: 768px) {
   .l-header-contact .l-header-contact__black-bg {
-    width: 50%;
     height: 615px;
   }
 }
@@ -1025,7 +1037,7 @@ object
 /* hamburger
 ---------------------------------*/
 .c-button--hamburger, .c-button--hamburger__about, .c-button--hamburger__contact {
-  width: 100px;
+  width: 90px;
   height: 50px;
   position: relative;
   right: 15px;
@@ -1048,18 +1060,18 @@ object
 }
 
 .c-button--hamburger .bar, .c-button--hamburger__about .bar, .c-button--hamburger__contact .bar {
-  width: 35px;
-  height: 3px;
+  width: 22px;
+  height: 2px;
   display: block;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   border-radius: 15px;
   background-color: #fff;
 }
 
 .c-button--hamburger .bar.bar_top, .c-button--hamburger__about .bar.bar_top, .c-button--hamburger__contact .bar.bar_top {
-  top: 28px;
+  top: 29px;
 }
 
 .c-button--hamburger .bar.bar_mid, .c-button--hamburger__about .bar.bar_mid, .c-button--hamburger__contact .bar.bar_mid {
@@ -1067,22 +1079,22 @@ object
 }
 
 .c-button--hamburger .bar.bar_bottom, .c-button--hamburger__about .bar.bar_bottom, .c-button--hamburger__contact .bar.bar_bottom {
-  top: 42px;
+  top: 41px;
 }
 
 .c-button--hamburger .button-text_menu, .c-button--hamburger__about .button-text_menu, .c-button--hamburger__contact .button-text_menu {
   display: block;
-  width: 55px;
+  width: 32px;
   height: 30px;
   position: absolute;
-  top: 25px;
-  right: 0;
+  top: 26px;
+  left: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
 }
 
 .c-button--hamburger.close .bar_top, .close.c-button--hamburger__about .bar_top, .close.c-button--hamburger__contact .bar_top {
-  transform: translateY(5px) rotate(30deg);
+  transform: translateY(3px) rotate(30deg);
   transition: transform .3s;
 }
 
@@ -1092,7 +1104,7 @@ object
 }
 
 .c-button--hamburger.close .bar_bottom, .close.c-button--hamburger__about .bar_bottom, .close.c-button--hamburger__contact .bar_bottom {
-  transform: translateY(-10px) rotate(-30deg);
+  transform: translateY(-9px) rotate(-30deg);
   transition: transform .3s;
 }
 
