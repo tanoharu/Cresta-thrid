@@ -1,4 +1,5 @@
 .l-header-about {
+	width: 100%;
 	@extend .l-header;
 	height: 450px;
 	@include mq(md) {
@@ -12,8 +13,7 @@
 }
 
 .l-header-about__bg {
-	// @extend .l-header__bg;
-	width: 80%;
+	width: 70%;
 	height: 390px;
 	position: absolute;
 	top: 0;
@@ -32,10 +32,13 @@
 	}
 
 	.main-copy--about {
-		@extend .main-copy;
 		width: 290px;
+		height: 250px;
+		position: absolute;
 		top: 40%;
-		right: -70px;
+		right: -18%;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
 		@include mq(md) {
 			top: 40%;
 			right: -45px;
@@ -47,15 +50,9 @@
 }
 
 .l-header-about__black-bg {
-	// @extend .l-header__black-bg;
+	@extend .l-header__black-bg;
 	width: 70%;
 	height: 450px;
-	// right: -50px;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: #222;
-	z-index: 10;
 	@include mq(md) {
 		width: 50%;
 		height: 615px;
@@ -66,6 +63,7 @@
 }
 
 .l-about-us-wrap {
+	width: 100%;
 	padding: 0 15px;
 	@include mq(md) {
 		padding: 0 30px;
@@ -97,6 +95,7 @@
 			padding: 0;
 		}
 		>img {
+			width: 340px;
 			display: block;
 			position: relative;
 			top: 0;
@@ -124,6 +123,7 @@
 	}
 
 	.p-contents-company {
+		width: 100%;
 		font-size: 14px;
 		@include mq(lg) {
 			width: 1100px;

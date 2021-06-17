@@ -18,57 +18,57 @@
 			height: 640px;
 			background-size: cover;
 		}
-
-		.site-logo {
-			width: 190px;
-			display: inline-block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 30;
-			margin: 20px;
-			@include mq(lg) {
-			width: 260px;
-			top: 30px;
-			left: 60px;
-			}
-		}
-
-		.main-copy {
-			width: 245px;
-			height: 250px;
-			position: absolute;
-			right: -35%;
-			top: 25%;
-			color: #fff;
-			font-family: 'Montserrat', sans-serif;
-			@include mq(md) {
-				top: 30%;
-				right: -28%;
-			}
-			@include mq(lg) {
-				width: 290px;
-				height: 320px;
-				right: -15%;
-			}
-			>h1 {
-				letter-spacing: 0.25rem;
-				font-size: 56px;
-				font-weight: 800;
-			}
-		}
 	}
+}
 
-	.l-header__black-bg {
-		width: 75%;
-		height: 700px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		background-color: #222222;
-		z-index: 10;
-		@include mq(lg) {
-		height: 730px;
-		}
+.site-logo {
+	width: 190px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	margin: 20px;
+	@include mq(lg) {
+	width: 260px;
+	top: 30px;
+	left: 60px;
+	}
+}
+
+.main-copy {
+	width: 245px;
+	height: 250px;
+	position: absolute;
+	right: -35%;
+	top: 25%;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	@include mq(md) {
+		top: 30%;
+		right: -28%;
+	}
+	@include mq(lg) {
+		width: 290px;
+		height: 320px;
+		right: -15%;
+	}
+	>h1 {
+		letter-spacing: 0.25rem;
+		font-size: 56px;
+		font-weight: 800;
+	}
+}
+
+.l-header__black-bg {
+	width: 75%;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #222;
+	z-index: 10;
+	@include mq(lg) {
+	height: 730px;
 	}
 }

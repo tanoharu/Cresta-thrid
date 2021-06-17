@@ -1,6 +1,6 @@
 .l-header-contact {
 	@extend .l-header;
-	// width: 100%;
+	width: 100%;
 	height: 365px;
 
 	@include mq(md) {
@@ -14,8 +14,6 @@
 
 	.l-header-contact__bg {
 		@extend .l-header__bg;
-		width: 75%;
-		// width: 80%;
 		height: 270px;
 		background-image: url(../../images/heading-img_contact_sm.png);
 		background-position: right 20% center;
@@ -31,80 +29,57 @@
 			background-size: cover;
 		}
 	}
-
-	.l-header-contact__mask {
-		width: 75%;
-		height: 270px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: rgba( 0, 0, 0, 0.3);
-		z-index: 25;
+	.main-copy--contact {
+		@extend .main-copy;
+		width: 100%;
+		height: 115px;
+		top: 35%;
+		right: 15px;
+		text-align: right;
+		z-index: 30;
 		@include mq(md) {
-			width: initial;
-			width: 100%;
-			height: 530px;
-			// position: static;
-			// position: relative;
-			background-color: transparent;
+			left: -50px;
 		}
-		.site-logo--contact {
-			@extend .site-logo;
-			margin: 20px;
-
-			@include mq(md) {
-				width: 200px;
-			}
-			@include mq(lg) {
-				top: 30px;
-				left: 60px;
-			}
+		@include mq(lg) {
+			left: -150px;
 		}
-		.main-copy--contact {
-			// @extend .main-copy;
-			// width: 70%;
-			// text-align: right;
-			height: 250px;
-			color: #fff;
-			font-family: 'Montserrat', sans-serif;
-			// position: absolute;
-			position: relative;
-			// right: -15%;
-			// right: 10px;
-			right: 30px;
-			top: 10%;
-			text-align: right;
+		>p {
+			font-weight: bold;
+			padding: 10px;
 			@include mq(md) {
-				top: 30%;
-				left: -50px;
-			}
-			@include mq(lg) {
-				left: -150px;
-			}
-			>p {
-				font-weight: bold;
-				padding: 10px;
-				@include mq(md) {
-					position: relative;
-					right: 210px;
-				}
+				position: relative;
+				right: 210px;
 			}
 		}
 	}
-	.l-header-contact__black-bg {
-		@extend .l-header__black-bg;
-		width: 55%;
-		// width: 70%;
-		height: 365px;
-		// right: 0;
-		// right: -20px;
+}
 
-		@include mq(md) {
-			height: 615px;
-		}
-		@include mq(lg) {
-			height: 460px;
-		}
+.l-header-contact__mask {
+	width: 70%;
+	height: 270px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba( 0, 0, 0, 0.3);
+	z-index: 25;
+	@include mq(md) {
+		width: initial;
+		width: 100%;
+		height: 530px;
+		background-color: transparent;
+	}
+}
+
+.l-header-contact__black-bg {
+	@extend .l-header__black-bg;
+	width: 55%;
+	height: 365px;
+
+	@include mq(md) {
+		height: 615px;
+	}
+	@include mq(lg) {
+		height: 460px;
 	}
 }
 
