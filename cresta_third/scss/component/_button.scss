@@ -1,0 +1,141 @@
+@use "../global/index" as global;
+
+/* read-more
+---------------------------------*/
+.c-button--read-more {
+	width: 160px;
+	height: 36px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 11px;
+	background-color: black;
+	margin-bottom: 0;
+	position: absolute;
+	left: 0;
+	&.about-us {
+		bottom: 100px;
+		left: 40px;
+		@include global.mq(md) {
+			left: 120px;
+		}
+	}
+	&.works {
+		bottom: 0;
+		left: 15px;
+		@include global.mq(md) {
+			bottom: 30px;
+			left: 30px;
+		}
+		@include global.mq(lg) {
+			bottom: -15px;
+			left: 0;
+		}
+	}
+	&.culture {
+		left: 15px;
+		bottom: 40px;
+		@include global.mq(md) {
+			left: 30px;
+		}
+		@include global.mq(lg) {
+			bottom: -15px;
+			left: 0;
+		}
+	}
+	&.archive {
+		bottom: -70px;
+		@include global.mq(lg) {
+			right: 0;
+			bottom: -80px;
+			left: auto;
+		}
+	}
+	&.contact {
+		left: 15px;
+		bottom: 30px;
+		@include global.mq(md) {
+			left: 30px;
+		}
+		@include global.mq(lg) {
+			left: 0;
+			bottom: 0;
+		}
+	}
+}
+
+/* hamburger
+---------------------------------*/
+.c-button--hamburger {
+	width: 90px;
+	height: 50px;
+	position: relative;
+	right: 15px;
+	margin: 0 0 0 auto;
+	z-index: 300;
+	color: #fff;
+
+	@include global.mq(md) {
+		right: 30px;
+	}
+	@include global.mq(lg) {
+		top: 30px;
+		right: 60px;
+	}
+	.bar {
+		width: 22px;
+		height: 2px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 15px;
+		background-color: #fff;
+		&.bar_top {
+			top: 29px;
+		}
+		&.bar_mid {
+			top: 35px;
+		}
+		&.bar_bottom {
+			top: 41px;
+		}
+	}
+
+	.button-text_menu {
+		display: block;
+		width: 32px;
+		height: 30px;
+		position: absolute;
+		top: 26px;
+		left: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 800;
+	}
+}
+.c-button--hamburger.close .bar_top {
+	transform: translateY(3px) rotate(30deg);
+	transition: transform .3s;
+}
+.c-button--hamburger.close .bar_mid {
+	opacity: 0;
+	transition: opacity .3s;
+}
+.c-button--hamburger.close .bar_bottom {
+	transform: translateY(-9px) rotate(-30deg);
+	transition: transform .3s;
+}
+
+/* submit
+---------------------------------*/
+.c-button--submit {
+	width: 160px;
+	height: 36px;
+	margin: 40px auto 80px auto;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #000;
+	color: #fff;
+	line-height: 36px;
+}

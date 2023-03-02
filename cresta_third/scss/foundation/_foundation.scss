@@ -1,0 +1,15 @@
+@use "../global";
+
+html, body {
+	width: 100%;
+	color: #333333;
+	font-family: 'Yu Gothic';
+
+	&.nonscroll {
+		overflow-x: hidden;
+	}
+}
+
+.about-body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
